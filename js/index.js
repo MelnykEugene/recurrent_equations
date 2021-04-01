@@ -90,9 +90,9 @@ function run(n,m,pscale,a=2,b=2.5,c=2,d=0.25){
 var frames=1000;
 var a=makeArr(0,3,frames);
 console.log(a);
-var b=makeArr(0,4,frames);
+var b=makeArr(0,3,frames);
 var c=makeArr(0,5,frames);
-var d=makeArr(0,2,frames);
+var d=makeArr(0,4,frames);
 var currentFrame;
 var n=10000;
 var m=30;
