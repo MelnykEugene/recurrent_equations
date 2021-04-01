@@ -90,9 +90,15 @@ function run(n,m,pscale,a=2,b=2.5,c=2,d=0.25){
 var frames=1000;
 var a=makeArr(0,3,frames);
 console.log(a);
+<<<<<<< HEAD
 var b=makeArr(0,3,frames);
 var c=makeArr(0,5,frames);
 var d=makeArr(0,4,frames);
+=======
+var b=makeArr(0,4,frames);
+var c=makeArr(0,3,frames);
+var d=makeArr(0,5,frames);
+>>>>>>> gh-pages
 var currentFrame;
 var n=10000;
 var m=30;
@@ -107,7 +113,7 @@ function step(){
     var [x,y]=points(n,pscale);
     count =0;
     while(count<m){
-        [x,y]=transform(x,y,a[currentFrame%frames],b[currentFrame%frames],c[currentFrame%frames],d[currentFrame%frames]);
+        [x,y]=transform(x,y,a[currentFrame%(frames-currentFrame)],b[currentFrame%frames],c[currentFrame%frames],d[currentFrame%frames]);
         count++;
     }
     ctx.fillStyle='rgba(0,0,0,0.1)';
