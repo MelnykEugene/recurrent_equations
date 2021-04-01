@@ -67,7 +67,7 @@ function toScreen(x,y){
 
 function plot(x,y){
     ctx.fillStyle='#FF0000';
-    ctx.fillRect(toScreen(0,0)[0],toScreen(0,0)[1],5,5);
+    //ctx.fillRect(toScreen(0,0)[0],toScreen(0,0)[1],5,5);
     ctx.fillStyle='rgba(255,255,255)';
     for(var i=0;i<x.length;i++){
         var color=intToRGB(i);
@@ -90,15 +90,9 @@ function run(n,m,pscale,a=2,b=2.5,c=2,d=0.25){
 var frames=1000;
 var a=makeArr(0,3,frames);
 console.log(a);
-<<<<<<< HEAD
 var b=makeArr(0,3,frames);
 var c=makeArr(0,5,frames);
 var d=makeArr(0,4,frames);
-=======
-var b=makeArr(0,4,frames);
-var c=makeArr(0,3,frames);
-var d=makeArr(0,5,frames);
->>>>>>> gh-pages
 var currentFrame;
 var n=10000;
 var m=30;
